@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <p>{
+&quot;cells&quot;: [
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;# Practice Exercise - 04&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 1:\n&quot;,
+&quot;\n&quot;,
+&quot;We have two sets given below. Print the set of elements that are present in either set1 or set2 but not both.\n&quot;,
+&quot;\n&quot;,
+&quot;set1 = {1, 2, 3, 4, 5}\n&quot;,
+&quot;<br>set2 = {4, 5, 6, 7}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{1, 2, 3, 6, 7}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 2:\n&quot;,
+&quot;\n&quot;,
+&quot;Print all the keys of the dictionary given below.\n&quot;,
+&quot;\n&quot;,
+&quot;myDict = {1:'One', 2:'Two', 3:'Three'}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;dict_keys([1, 2, 3])&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 3:\n&quot;,
+&quot;\n&quot;,
+&quot;We have two sets given below. Print the elements common to both the sets.\n&quot;,
+&quot;\n&quot;,
+&quot;set1 = {1, 2, 3, 4, 5}\n&quot;,
+&quot;<br>set2 = {4, 5, 6, 7}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{4, 5}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 4:\n&quot;,
+&quot;\n&quot;,
+&quot;We have a dictionary given below. Delete the item with key '3,' and add an item with key '7' and value 'Black.'\n&quot;,
+&quot;\n&quot;,
+&quot;color = {1:'Red', 2:'Orange', 3:'White', 4:'Brown', 5:'Yellow'}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{1: 'Red', 2: 'Orange', 4: 'Brown', 5: 'Yellow', 7: 'Black'}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 5:\n&quot;,
+&quot;\n&quot;,
+&quot;We have two sets given below. Check if set1 is a subset of set2.\n&quot;,
+&quot;\n&quot;,
+&quot;set1 = {2, 4, 6}\n&quot;,
+&quot;<br>set2 = {2, 4, 6, 8, 10}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;True&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 6:\n&quot;,
+&quot;\n&quot;,
+&quot;Merge the two dictionaries given below.\n&quot;,
+&quot;\n&quot;,
+&quot;myDict1 = {1:'One', 2:'Two', 3:'Three'}\n&quot;,
+&quot;<br>myDict2 = {4:'Four', 5:'Five', 6:'Six'}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six'}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 7:\n&quot;,
+&quot;\n&quot;,
+&quot;We have two sets given below. Print the elements that are present in set1 but not in set2.\n&quot;,
+&quot;\n&quot;,
+&quot;set1 = {2, 3, 4, 5}\n&quot;,
+&quot;<br>set2 = {2, 4, 6, 8}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Solution:\n&quot;,
+&quot;\n&quot;,
+&quot;{3, 5}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 8:\n&quot;,
+&quot;\n&quot;,
+&quot;We have a dictionary given below. Copy this dictionary into another dictionary 'replica,' and change the value of the key 103 to 'Sally' in the replica dictionary only. Finally, print both the dictionaries.\n&quot;,
+&quot;\n&quot;,
+&quot;student_details = {101:'Judy', 102:'Victor', 103:'Sam'}\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{101: 'Judy', 102: 'Victor', 103: 'Sam'}\n&quot;,
+&quot;<br>{101: 'Judy', 102: 'Victor', 103: 'Sally'}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 9:\n&quot;,
+&quot;\n&quot;,
+&quot;Remove all the duplicate items from the tuple given below.\n&quot;,
+&quot;\n&quot;,
+&quot;myTuple = ('Red', 'Blue', 'Green', 'Red', 'Orange', 'Green')\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{'Blue', 'Green', 'Orange', 'Red'}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+},
+{
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [
+&quot;### Question 10:\n&quot;,
+&quot;\n&quot;,
+&quot;Print the number and the cube of that number in a dictionary from 0 to 5.\n&quot;,
+&quot;\n&quot;,
+&quot;#### Expected Output:\n&quot;,
+&quot;\n&quot;,
+&quot;{0: 0, 1: 1, 2: 8, 3: 27, 4: 64, 5: 125}&quot;
+]
+},
+{
+&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: null,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: []
+}
+],
+&quot;metadata&quot;: {
+&quot;kernelspec&quot;: {
+&quot;display_name&quot;: &quot;Python 3&quot;,
+&quot;language&quot;: &quot;python&quot;,
+&quot;name&quot;: &quot;python3&quot;
+},
+&quot;language_info&quot;: {
+&quot;codemirror_mode&quot;: {
+&quot;name&quot;: &quot;ipython&quot;,
+&quot;version&quot;: 3
+},
+&quot;file_extension&quot;: &quot;.py&quot;,
+&quot;mimetype&quot;: &quot;text/x-python&quot;,
+&quot;name&quot;: &quot;python&quot;,
+&quot;nbconvert_exporter&quot;: &quot;python&quot;,
+&quot;pygments_lexer&quot;: &quot;ipython3&quot;,
+&quot;version&quot;: &quot;3.8.3&quot;
+}
+},
+&quot;nbformat&quot;: 4,
+&quot;nbformat_minor&quot;: 4
+}</p>
+
+            
+            
+        </body>
+        </html>
