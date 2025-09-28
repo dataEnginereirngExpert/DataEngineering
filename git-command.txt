@@ -1,0 +1,14 @@
+# Make sure you are on the main branch
+git checkout main
+
+# Pull latest changes to avoid conflicts
+git pull origin main
+
+# Stage all new/modified files
+git add .
+
+# Commit with a message
+git commit -m "Your commit message here"
+
+# Push to the remote main branch
+git push origin main
