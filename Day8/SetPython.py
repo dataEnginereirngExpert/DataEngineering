@@ -20,3 +20,6 @@ print(newname)
 
 newname.remove('sugriv')
 print(newname)
+frozennewname=frozenset(newname)
+print(frozennewname)
+frozennewname.add('Sita')
