@@ -1,0 +1,7 @@
+Pandas is a Python library used for data manipulation and analysis.
+It provides fast and flexible data structures for working with structured data.
+The two main data structures in Pandas are Series (1-dimensional) and DataFrame (2-dimensional).
+It is built on top of NumPy and optimized for performance.
+Pandas simplifies tasks like cleaning, transforming, filtering, and summarizing data.
+It is widely used in data engineering, data science, and analytics workflows.
+Pandas supports working with data from multiple formats such as CSV, Excel, SQL, and JSON.
